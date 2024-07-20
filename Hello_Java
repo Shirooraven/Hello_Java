@@ -1,5 +1,16 @@
-Public class Hello_Java {
-public static void main(String[] args) {
-    System.out.println("Hello Java!");
-}
+public class Hello_Java {
+    // Int típusú változók
+    private int szam1 = 2;
+    private int szam2 = 3;
+    
+    // Metódus, amely int típust ad vissza
+    public int alma() {
+        return szam1 + szam2; // Az int típusú változók összeadása
+    }
+    
+    // Fő metódus a program futtatásához
+    public static void main(String[] args) {
+        Hello_Java example = new Hello_Java(); // Példányosítjuk az osztályt
+        System.out.println(example.alma()); // Kiírjuk az eredményt
+    }
 }
